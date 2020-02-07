@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试查询结果</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>主机</td>
+    </tr>
+    {% for h in hosts %}
+        <tr>
+            <td>{{ h }}</td>
+        </tr>
+    {% endfor %}
+
+</table>
+</body>
+</html>

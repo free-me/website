@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户添加</title>
+</head>
+<body>
+<form action="../userAdd/" method="POST">
+    {% csrf_token %}
+添加用户:
+    <br>
+        <input type="text" name="userID" value="" text="用户ID：">
+    </br>
+    <br>
+        <input type="text" name="userName" value="" text="用户名：">
+    </br>
+    <br>
+        <input type="text" name="passWord" value="" text="密码：">
+    </br>
+    <br>
+        <input type="text" name="phone" value="" text="手机：">
+    </br>
+    <br>
+        <input type="text" name="email" value="" text="邮箱：">
+    </br>
+<br><br>
+<input type="submit" value="Submit">
+</form>
+{{ rlt }}
+{% if today_is_weekend %}
+    <p>Welcome to the weekend!</p>
+{% else %}
+    <p>Get back to work.</p>
+{% endif %}
+</body>
+</html>
